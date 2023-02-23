@@ -1,13 +1,16 @@
 <template>
   <HeaderSection/>
+  <LandingPageView/>
 </template>
 
 <script>
 import HeaderSection from '../LandingPageCompo/HeaderSection.vue'
+import LandingPageView from "../LandingPageCompo/LandingPageView.vue"
 export default {
   name: 'LandingPage',
   components: {
-    HeaderSection
+    HeaderSection,
+    LandingPageView
   }
 }
 </script>
