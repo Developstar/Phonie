@@ -22,7 +22,7 @@ export default{
     align-items: center;
     background: #22253e;
     color: white;
-    height: 5rem;
+    height: 10vh;
     
 }
 
