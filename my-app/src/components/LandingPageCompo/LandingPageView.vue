@@ -13,7 +13,7 @@
           Helping individuals and businesses stay connected and thrive in
           today's hyper-connected world
         </p>
-        <div class="AccessButton">
+        <div class="AccessButton learnMore">
           <button>Learn More</button>
         </div>
       </div>
@@ -86,5 +86,10 @@ export default {
 .illustration-wrapper img {
   height: 100%;
   width: 100%;
+}
+
+.learnMore button{
+  background: #151515;
+  color: white;
 }
 </style>
