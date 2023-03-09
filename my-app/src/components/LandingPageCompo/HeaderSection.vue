@@ -3,8 +3,8 @@
     <div class="logo">Phonie</div>
 
     <div class="AccessButton rightSideNav">
-      <div>Login</div>
-      <div><button>Request Early Access</button></div>
+      <div class="login">Login</div>
+      <div><button class="earlyAcessButton">Request Early Access</button></div>
     </div>
   </div>
 </template>
@@ -46,5 +46,9 @@ export default {
 
   padding: 0.7rem;
   border-radius: 0.4rem;
+}
+
+.login, .earlyAcessButton {
+  cursor: pointer;
 }
 </style>

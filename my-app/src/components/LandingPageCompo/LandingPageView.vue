@@ -91,5 +91,6 @@ export default {
 .learnMore button{
   background: #151515;
   color: white;
+  cursor: pointer;
 }
 </style>
