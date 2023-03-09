@@ -1,8 +1,11 @@
 <template>
 <div class="HeaderSection">
     <div class="logo">Phonie</div>
-    <div class="AccessButton">
-        <button>Request Early Access</button>   
+    
+    <div class="AccessButton rightSideNav">
+        <div>Login</div>
+        <div><button>Request Early Access</button></div>
+           
     </div>
 </div>
 </template>
@@ -20,8 +23,8 @@ export default{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background: #22253e;
-    color: white;
+    background: white;
+    color: #22253e;
     height: 10vh;
     
 }
@@ -32,13 +35,19 @@ export default{
     margin-left: 1rem;
 }
 
+.rightSideNav{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 .AccessButton{
     margin-right: 1rem;
 }
 
 .AccessButton button{
     background: white;
-    border: none;
+    
     padding: 0.7rem;
     border-radius: 0.4rem;
     
