@@ -3,6 +3,7 @@
     <div class="underContruction">
       <p>This site is currently being updated !</p>
     </div>
+    
     <div class="Content-Wrapper">
       <div class="content">
         <h1 class="slogan">
@@ -38,15 +39,15 @@ export default {
   margin: auto;
   height: 90vh;
   /* border: 1px solid greenyellow; */
-  margin-top: 3rem;
+  margin-top: 7rem;
 }
 
 .underContruction {
-  position: absolute;
+  position: fixed;
   top: 3.5rem;
   left: 0;
   background-color: #726cee;
-  width: 100%;
+  width: 100vw;
   height: 1.8rem;
   color: aliceblue;
   text-align: center;
@@ -78,7 +79,8 @@ export default {
 }
 
 .illustration-wrapper {
-  /* border: 1px solid green; */
+ 
+  
   height: 70vh;
   width: 35%;
 }
@@ -92,5 +94,13 @@ export default {
   background: #151515;
   color: white;
   cursor: pointer;
+}
+
+
+@media (min-width:320px) and (max-width:480px){
+  .underContruction p {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
 }
 </style>
