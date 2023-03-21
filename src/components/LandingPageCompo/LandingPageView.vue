@@ -1,8 +1,9 @@
 <template>
-  <section class="page_wrapper">
-    <div class="underContruction">
+  <div class="underContruction">
       <p>This site is currently being updated !</p>
     </div>
+  <section class="page_wrapper">
+    
     
     <div class="Content-Wrapper">
       <div class="content">
@@ -20,7 +21,8 @@
       </div>
     </div>
     <div class="illustration-wrapper">
-      <img src="../../assets/image-hero-desktop.png" />
+      <img class="desktopHero" src="../../assets/image-hero-desktop.png" />
+      <img class="mobileHero" src="../../assets/image-hero-mobile.png" />
     </div>
   </section>
 </template>
@@ -79,8 +81,6 @@ export default {
 }
 
 .illustration-wrapper {
- 
-  
   height: 70vh;
   width: 35%;
 }
@@ -88,6 +88,10 @@ export default {
 .illustration-wrapper img {
   height: 100%;
   width: 100%;
+}
+
+.mobileHero{
+  display: none;
 }
 
 .learnMore button{
@@ -102,5 +106,43 @@ export default {
   font-size: 0.7rem;
   margin-top: 0.5rem;
 }
+
+.page_wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.desktopHero{
+  display: none;
+}
+
+.mobileHero{
+  display: flex;
+}
+}
+
+.page_wrapper {
+  width: 100vw;
+  margin-top: 15rem;
+}
+
+.illustration-wrapper {
+  height: 70vh;
+  width: 100%;
+  
+}
+
+.Content-Wrapper {
+  /* border: 1px solid red; */
+  height: 70vh;
+
+  width: 100%;
+}
+
+.content {
+  /* border: 1px solid red; */
+  width: 100%;
+  
+  text-align: center;
 }
 </style>
