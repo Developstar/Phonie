@@ -1,26 +1,29 @@
 <template>
-  <div >
-    <LandingPage />
+  <div id="app">
+    <HeaderSection />
+    <RouterView></RouterView>
   </div>
-  
 </template>
 
 <script>
-import LandingPage from './components/Pages/LandingPage.vue'
+import HeaderSection from "./components/CrossPageCompo/HeaderSection.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    LandingPage
-  }
-}
+    HeaderSection,
+  },
+};
 </script>
 
 <style>
-body{
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap");
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Alkatra", cursive;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
